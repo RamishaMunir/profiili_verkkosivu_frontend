@@ -1,14 +1,19 @@
 import React from 'react';
 
-const Achievements = () => {
+const Achievements = ({ achievements }) => {
+  if (!achievements || !Array.isArray(achievements.honors)) return null;
+
   return (
     <section id="achievements" className="section">
-      <h2>Achievements Section</h2>
       <div className="achievements-content">
-        <p>This section highlights my notable achievements, awards, and recognitions throughout my career and education.</p>
+        {achievements.honors.map((item, index) => (
+          <div key={index} className="achievement-item">
+            <p>{item}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default Achievements; 
+export default Achievements;

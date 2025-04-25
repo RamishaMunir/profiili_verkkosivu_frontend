@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
+import Navigation from './components/Navigation';
 import About from './components/About';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import Achievements from './components/Achievements';
-import Contact from './components/Contact';
+import Hobbies from './components/Hobbies';
+import References from './components/References';
+import Recommendations from './components/Recommendations';
+import Footer from './components/Footer';
 import { fetchFullCV } from './api';
 import './styles.css';
 
@@ -40,14 +44,35 @@ function App() {
   return (
     <div className="app">
       <Header personal={cvData.personal} />
-      <div className="container">
-        <About personal={cvData.personal} />
-        <Experience experience={cvData.experience} />
-        <Education education={cvData.education} />
-        <Skills skills={cvData.skills} />
-        <Achievements achievements={cvData.achievements} />
-        <Contact personal={cvData.personal} />
-      </div>
+      <Navigation />
+      <main className="main-content">
+        <div className="container">
+          <h2>About</h2>
+          <About personal={cvData.personal} />
+          
+          <h2>Experience</h2>
+          <Experience experience={cvData.experience} />
+          
+          <h2>Recommendations</h2>
+          <Recommendations recommendations={cvData.recommendations} />
+          
+          <h2>Education</h2>
+          <Education education={cvData.education} />
+          
+          <h2>Skills</h2>
+          <Skills skills={cvData.skills} />
+          
+          <h2>Achievements</h2>
+          <Achievements achievements={cvData.achievements} />
+          
+          <h2>Hobbies</h2>
+          <Hobbies hobbies={cvData.hobbies} />
+          
+          <h2>References</h2>
+          <References references={cvData.references} />
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 }

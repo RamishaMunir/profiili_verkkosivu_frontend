@@ -1,33 +1,39 @@
 import React from 'react';
+import { BASE_URL } from '../api';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
-function Header({ personal }) {
+const Header = ({ personal }) => {
+  // Default profile picture path
+  const profilePicture = personal?.profilePicture || `${BASE_URL}/static/ramisha.jpg`;
+
   return (
     <header className="header">
       <div className="container">
-        <div className="profile-picture-container">
-          <img 
-            src="http://192.168.0.102:5000/static/student_card.jpg" 
-            alt="Profile" 
-            className="profile-picture"
-          />
+        <div className="header-content">
+          <div className="header-info">
+            <h1>{personal?.name || 'Ramisha Munir'}</h1>
+            <h2>{personal?.title || 'Data Engineer | Software Engineer'}</h2>
+            <p className="location">
+              <FontAwesomeIcon icon={faLocationDot} className="location-icon" />
+              {personal?.location || 'Oulu, Finland'}
+            </p>
+          </div>
+          <div className="profile-picture-container">
+            <img 
+              src={profilePicture} 
+              alt={personal?.name || 'Profile Picture'} 
+              className="profile-picture"
+              onError={(e) => {
+                e.target.src = `${BASE_URL}/static/ramisha.jpg`;
+              }}
+            />
+          </div>
         </div>
-        <h1>{personal.name}</h1>
-        <h2>{personal.title}</h2>
-        <p className="location">{personal.location}</p>
-        <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
   );
-}
+};
 
 export default Header;
 
