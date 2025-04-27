@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/profiili_verkkosivu_frontend/static/css/main.9dee3c87.css",
-    "main.js": "/profiili_verkkosivu_frontend/static/js/main.cae67b81.js",
+    "main.js": "/profiili_verkkosivu_frontend/static/js/main.f0c86919.js",
     "index.html": "/profiili_verkkosivu_frontend/index.html",
     "main.9dee3c87.css.map": "/profiili_verkkosivu_frontend/static/css/main.9dee3c87.css.map",
-    "main.cae67b81.js.map": "/profiili_verkkosivu_frontend/static/js/main.cae67b81.js.map"
+    "main.f0c86919.js.map": "/profiili_verkkosivu_frontend/static/js/main.f0c86919.js.map"
   },
   "entrypoints": [
     "static/css/main.9dee3c87.css",
-    "static/js/main.cae67b81.js"
+    "static/js/main.f0c86919.js"
   ]
 }
