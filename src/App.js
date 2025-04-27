@@ -47,28 +47,28 @@ function App() {
       <Navigation />
       <main className="main-content">
         <div className="container">
-          <h2>About</h2>
+          <h2 id="about">About</h2>
           <About personal={cvData.personal} />
           
-          <h2>Experience</h2>
+          <h2 id="experience">Experience</h2>
           <Experience experience={cvData.experience} />
           
-          <h2>Recommendations</h2>
+          <h2 id="recommendations">Recommendations</h2>
           <Recommendations recommendations={cvData.recommendations} />
           
-          <h2>Education</h2>
+          <h2 id="education">Education</h2>
           <Education education={cvData.education} />
           
-          <h2>Skills</h2>
+          <h2 id="skills">Skills</h2>
           <Skills skills={cvData.skills} />
           
-          <h2>Achievements</h2>
+          <h2 id="achievements">Achievements</h2>
           <Achievements achievements={cvData.achievements} />
           
-          <h2>Hobbies</h2>
+          <h2 id="hobbies">Hobbies</h2>
           <Hobbies hobbies={cvData.hobbies} />
           
-          <h2>References</h2>
+          <h2 id="references">References</h2>
           <References references={cvData.references} />
         </div>
       </main>

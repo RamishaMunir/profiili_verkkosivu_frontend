@@ -15,7 +15,7 @@ const Skills = ({ skills }) => {
   );
 
   return (
-    <section id="skills" className="section">
+    <section className="section">
       <div className="skills-content">
         {/* Technical Skills */}
         {skills.technical &&
