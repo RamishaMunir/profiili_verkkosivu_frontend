@@ -1,8 +1,9 @@
 {
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "private": true,
-  "homepage": "https://ramishamunir.github.io/personal-portfolio",
+  "private": true, 
+  "homepage": "https://ramishamunir.github.io/profiili_verkkosivu_frontend",
+  // "homepage": "https://ramishamunir.github.io/personal-portfolio",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
