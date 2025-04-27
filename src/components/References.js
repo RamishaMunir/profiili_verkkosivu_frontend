@@ -6,7 +6,7 @@ const References = ({ references = [] }) => {
   }
 
   return (
-    <section id="references" className="section">
+    <section className="section">
       <div className="references-content">
         {references.map((reference, index) => (
           <div key={index} className="reference-item">

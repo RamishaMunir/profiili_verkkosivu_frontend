@@ -6,7 +6,7 @@ const Hobbies = ({ hobbies = [] }) => {
   }
 
   return (
-    <section id="hobbies" className="section">
+    <section className="section">
       <div className="hobbies-content">
         {hobbies.map((hobby, index) => (
           <div key={index} className="hobby-item">

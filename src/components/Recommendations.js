@@ -6,7 +6,7 @@ const Recommendations = ({ recommendations = [] }) => {
   }
 
   return (
-    <section id="recommendations" className="section">
+    <section className="section">
       <div className="recommendations-content">
         {recommendations.map((recommendation, index) => (
           <div key={index} className="recommendation-item">
