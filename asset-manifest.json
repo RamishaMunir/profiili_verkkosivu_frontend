@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/personal-portfolio/static/css/main.9dee3c87.css",
-    "main.js": "/personal-portfolio/static/js/main.cae67b81.js",
-    "index.html": "/personal-portfolio/index.html",
-    "main.9dee3c87.css.map": "/personal-portfolio/static/css/main.9dee3c87.css.map",
-    "main.cae67b81.js.map": "/personal-portfolio/static/js/main.cae67b81.js.map"
+    "main.css": "/profiili_verkkosivu_frontend/static/css/main.9dee3c87.css",
+    "main.js": "/profiili_verkkosivu_frontend/static/js/main.cae67b81.js",
+    "index.html": "/profiili_verkkosivu_frontend/index.html",
+    "main.9dee3c87.css.map": "/profiili_verkkosivu_frontend/static/css/main.9dee3c87.css.map",
+    "main.cae67b81.js.map": "/profiili_verkkosivu_frontend/static/js/main.cae67b81.js.map"
   },
   "entrypoints": [
     "static/css/main.9dee3c87.css",
